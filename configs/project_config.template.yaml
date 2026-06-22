@@ -1,0 +1,29 @@
+# This is a documentation template, not a runnable config.
+# Replace every <...> field with project-specific values before use.
+
+project:
+  name: <PROJECT_NAME>
+  description: <PROJECT_SPECIFIC_DESCRIPTION>
+
+data:
+  gnss_source: <PATH_OR_DATABASE_QUERY_DEFINED_BY_USER>
+  imu_source: <PATH_OR_DATABASE_QUERY_DEFINED_BY_USER>
+  lidar_source: <PATH_OR_DATABASE_QUERY_DEFINED_BY_USER>
+  satellite_context_source: <PATH_OR_DATABASE_QUERY_DEFINED_BY_USER>
+  timestamp_alignment: <USER_IMPLEMENTED_RULE>
+  sample_builder: <USER_IMPLEMENTED_FUNCTION_OR_CLASS>
+
+features:
+  gnss_dim: <MATCH_PRIVATE_PREPROCESSING>
+  imu_dim: <MATCH_PRIVATE_PREPROCESSING>
+  lidar_dim: <MATCH_PRIVATE_PREPROCESSING>
+  satellite_dim: <MATCH_PRIVATE_PREPROCESSING>
+  temporal_dim: <MATCH_PRIVATE_PREPROCESSING>
+
+training:
+  split_strategy: <USER_DEFINED>
+  optimizer: <USER_DEFINED>
+  scheduler: <USER_DEFINED>
+  logging: <USER_DEFINED>
+  checkpointing: <USER_DEFINED>
+  lambda_sparse: <USER_DEFINED>
